@@ -1,0 +1,31 @@
+{
+ "record": "cubinoct_n25",
+ "piece": "cube",
+ "container": "octahedron",
+ "n": 25,
+ "s0": 4.7071073261356,
+ "tol": 3.162278166651533e-05,
+ "contacts": {
+  "w": 64,
+  "vf": 1808,
+  "ee": 8
+ },
+ "equations": 1905,
+ "variables": 176,
+ "rank": 173,
+ "kernel": 3,
+ "kernel_s_component": 8.70305307073885e-19,
+ "converged": true,
+ "residual": "1.16e-122",
+ "determined": true,
+ "recheck_diff": "-3.8e-124",
+ "family": false,
+ "digits": 117,
+ "s": "4.70710678118654752440084436210484903928483593768847403658833986899536623923105351942519376716382078636750692311545615",
+ "poly": [
+  2,
+  -16,
+  31
+ ],
+ "closed_form": "√2/2 + 4"
+}

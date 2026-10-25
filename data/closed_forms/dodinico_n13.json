@@ -1,0 +1,32 @@
+{
+ "record": "dodinico_n13",
+ "piece": "dodecahedron",
+ "container": "icosahedron",
+ "n": 13,
+ "s0": 4.0652478217131,
+ "tol": 3.236069055288437e-05,
+ "contacts": {
+  "w": 120,
+  "vf": 720,
+  "ee": 0
+ },
+ "equations": 853,
+ "variables": 92,
+ "rank": 92,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "3.06e-123",
+ "determined": true,
+ "minimize": "なし",
+ "recheck_diff": "-2.3e-124",
+ "family": false,
+ "digits": 117,
+ "s": "4.06524758424985278748642156811189336480843285172806800698962807178736464794646342959009008586514759247865572330554165",
+ "poly": [
+  5,
+  -25,
+  19
+ ],
+ "closed_form": "7*√5/10 + 5/2"
+}

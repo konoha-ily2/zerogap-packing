@@ -1,0 +1,35 @@
+{
+ "record": "icointet_n02",
+ "piece": "icosahedron",
+ "container": "tetrahedron",
+ "n": 2,
+ "s0": 5.3582498523266,
+ "tol": 3.1623162062972795e-05,
+ "contacts": {
+  "w": 18,
+  "vf": 2,
+  "ee": 2
+ },
+ "equations": 24,
+ "variables": 15,
+ "rank": 15,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "3.56e-123",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "-2.41e-123",
+ "family": false,
+ "digits": 117,
+ "s": "5.35824925288089356320249228396557098411498786221406960783936335821554050783560465477617355535872338161990551978409664",
+ "poly": [
+  25,
+  0,
+  -720,
+  0,
+  64
+ ],
+ "closed_form": "√(32*√5/5 + 72/5)"
+}

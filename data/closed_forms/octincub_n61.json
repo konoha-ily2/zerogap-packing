@@ -1,0 +1,31 @@
+{
+ "record": "octincub_n61",
+ "piece": "octahedron",
+ "container": "cube",
+ "n": 61,
+ "s0": 3.5826748813281,
+ "tol": 3.651484309392027e-05,
+ "contacts": {
+  "w": 186,
+  "vf": 136,
+  "ee": 570
+ },
+ "equations": 953,
+ "variables": 428,
+ "rank": 428,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "7.39e-122",
+ "determined": true,
+ "recheck_diff": "5.82e-123",
+ "family": false,
+ "digits": 117,
+ "s": "3.58267435801184079029761143466456846570983541762160178538092200290985561210400449842098175363002531759536841045164449",
+ "poly": [
+  225,
+  0,
+  -2888
+ ],
+ "closed_form": "38*√2/15"
+}

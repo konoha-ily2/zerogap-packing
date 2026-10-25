@@ -1,0 +1,39 @@
+{
+ "record": "cubinoct_n70",
+ "piece": "cube",
+ "container": "octahedron",
+ "n": 70,
+ "s0": 7.2352090408843,
+ "tol": 4.862526766147653e-06,
+ "contacts": {
+  "w": 54,
+  "vf": 4008,
+  "ee": 134
+ },
+ "equations": 4266,
+ "variables": 491,
+ "rank": 483,
+ "kernel": 8,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "2.38e-127",
+ "determined": true,
+ "minimize": "済",
+ "quick": false,
+ "recheck_diff": "8.23e-31",
+ "family": false,
+ "digits": 27,
+ "s": "7.23520821257060366781806071",
+ "poly": [
+  4,
+  -27,
+  -8,
+  -48,
+  27,
+  17,
+  77,
+  65,
+  -14,
+  -47
+ ]
+}

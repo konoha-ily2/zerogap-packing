@@ -1,0 +1,32 @@
+{
+ "record": "cubincub_n85",
+ "piece": "cube",
+ "container": "cube",
+ "n": 85,
+ "s0": 5.0000014,
+ "tol": 5.4772255746236664e-05,
+ "contacts": {
+  "w": 316,
+  "vf": 9084,
+  "ee": 0
+ },
+ "equations": 9485,
+ "variables": 596,
+ "rank": 596,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.23e-121",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "-3.4e-123",
+ "family": false,
+ "digits": 117,
+ "s": "5.0",
+ "poly": [
+  1,
+  -5
+ ],
+ "closed_form": "5"
+}

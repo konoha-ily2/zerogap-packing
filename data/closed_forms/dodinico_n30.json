@@ -1,0 +1,28 @@
+{
+ "record": "dodinico_n30",
+ "piece": "dodecahedron",
+ "container": "icosahedron",
+ "n": 30,
+ "s0": 5.8483385639913,
+ "tol": 3.350941559935177e-06,
+ "contacts": {
+  "w": 62,
+  "vf": 95,
+  "ee": 74
+ },
+ "equations": 261,
+ "variables": 211,
+ "rank": 207,
+ "kernel": 4,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.01e-125",
+ "determined": true,
+ "minimize": "済",
+ "quick": false,
+ "recheck_diff": "3.89e-123",
+ "family": false,
+ "digits": 117,
+ "s": "5.84833823276456508740480107537961589907829582463011659809450114227735977661572603194781229213896452033775090635036335",
+ "poly_searched_degree": 24
+}

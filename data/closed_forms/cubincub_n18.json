@@ -1,0 +1,31 @@
+{
+ "record": "cubincub_n18",
+ "piece": "cube",
+ "container": "cube",
+ "n": 18,
+ "s0": 3.0000004000001,
+ "tol": 3.162278451028986e-05,
+ "contacts": {
+  "w": 132,
+  "vf": 1368,
+  "ee": 0
+ },
+ "equations": 1518,
+ "variables": 127,
+ "rank": 127,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.63e-124",
+ "determined": true,
+ "minimize": "なし",
+ "recheck_diff": "1.18e-125",
+ "family": false,
+ "digits": 117,
+ "s": "3.0",
+ "poly": [
+  1,
+  -3
+ ],
+ "closed_form": "3"
+}

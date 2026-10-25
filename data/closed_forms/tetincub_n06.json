@@ -1,0 +1,28 @@
+{
+ "record": "tetincub_n06",
+ "piece": "tetrahedron",
+ "container": "cube",
+ "n": 6,
+ "s0": 1.1964562030079,
+ "tol": 2.087819581142302e-05,
+ "contacts": {
+  "w": 24,
+  "vf": 4,
+  "ee": 10
+ },
+ "equations": 44,
+ "variables": 43,
+ "rank": 43,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "2.56e-130",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "-3.66e-131",
+ "family": false,
+ "digits": 117,
+ "s": "1.19645580830722316128486765805038584519613321198640264140817748511545732622317062247289301945145115951578324068091722",
+ "poly_searched_degree": 24
+}

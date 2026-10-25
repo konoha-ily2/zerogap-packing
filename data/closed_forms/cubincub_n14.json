@@ -1,0 +1,31 @@
+{
+ "record": "cubincub_n14",
+ "piece": "cube",
+ "container": "cube",
+ "n": 14,
+ "s0": 2.9899498660706,
+ "tol": 2.6936948943006226e-05,
+ "contacts": {
+  "w": 88,
+  "vf": 8,
+  "ee": 16
+ },
+ "equations": 126,
+ "variables": 99,
+ "rank": 87,
+ "kernel": 12,
+ "kernel_s_component": 4.582779295923746e-12,
+ "converged": true,
+ "residual": "5.7e-23",
+ "determined": true,
+ "recheck_diff": "1.7e-15",
+ "family": true,
+ "digits": 19,
+ "s": "2.989949493661166534",
+ "poly": [
+  50,
+  -200,
+  151
+ ],
+ "closed_form": "7*√2/10 + 2"
+}

@@ -1,0 +1,26 @@
+{
+ "record": "icoinico_n21",
+ "piece": "icosahedron",
+ "container": "icosahedron",
+ "n": 21,
+ "s0": 3.4070521508362,
+ "tol": 2.1337200973316002e-06,
+ "contacts": {
+  "w": 48,
+  "vf": 16,
+  "ee": 73
+ },
+ "equations": 158,
+ "variables": 148,
+ "rank": 140,
+ "kernel": 8,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "2.73e-72",
+ "determined": true,
+ "minimize": "済",
+ "quick": true,
+ "digits": 57,
+ "s": "3.40705185925481601200193362241585276073538897451787281311",
+ "poly_searched_degree": 24
+}

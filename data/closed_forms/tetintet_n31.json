@@ -1,0 +1,26 @@
+{
+ "record": "tetintet_n31",
+ "piece": "tetrahedron",
+ "container": "tetrahedron",
+ "n": 31,
+ "s0": 3.823272139316,
+ "tol": 1.5359486813041063e-06,
+ "contacts": {
+  "w": 111,
+  "vf": 86,
+  "ee": 74
+ },
+ "equations": 302,
+ "variables": 218,
+ "rank": 218,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.95e-61",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "3.82327095786058647053647603977309362892524694094900561163",
+ "poly_searched_degree": 24
+}

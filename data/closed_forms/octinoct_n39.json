@@ -1,0 +1,26 @@
+{
+ "record": "octinoct_n39",
+ "piece": "octahedron",
+ "container": "octahedron",
+ "n": 39,
+ "s0": 3.9295905638596,
+ "tol": 1.59349562067787e-05,
+ "contacts": {
+  "w": 121,
+  "vf": 66,
+  "ee": 122
+ },
+ "equations": 348,
+ "variables": 274,
+ "rank": 272,
+ "kernel": 2,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "2.27e-62",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "3.9295900445959655086006080902226283753130214621317179715",
+ "poly_searched_degree": 24
+}

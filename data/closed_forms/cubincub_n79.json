@@ -1,0 +1,33 @@
+{
+ "record": "cubincub_n79",
+ "piece": "cube",
+ "container": "cube",
+ "n": 79,
+ "s0": 4.8856194488499,
+ "tol": 1.51936934980996e-06,
+ "contacts": {
+  "w": 334,
+  "vf": 669,
+  "ee": 42
+ },
+ "equations": 1124,
+ "variables": 554,
+ "rank": 438,
+ "kernel": 116,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "3.47e-122",
+ "determined": true,
+ "minimize": "済",
+ "quick": false,
+ "recheck_diff": "3.31e-116",
+ "family": false,
+ "digits": 112,
+ "s": "4.885618083164126731735584965612930771426229167169264097568906317320976637949476051800516712436855430313351794975",
+ "poly": [
+  9,
+  -54,
+  49
+ ],
+ "closed_form": "4*√2/3 + 3"
+}

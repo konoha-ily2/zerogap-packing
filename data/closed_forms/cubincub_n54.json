@@ -1,0 +1,31 @@
+{
+ "record": "cubincub_n54",
+ "piece": "cube",
+ "container": "cube",
+ "n": 54,
+ "s0": 4.0000005000001,
+ "tol": 3.162278436985656e-05,
+ "contacts": {
+  "w": 336,
+  "vf": 4512,
+  "ee": 0
+ },
+ "equations": 4902,
+ "variables": 379,
+ "rank": 379,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.28e-122",
+ "determined": true,
+ "minimize": "なし",
+ "recheck_diff": "9.93e-124",
+ "family": false,
+ "digits": 117,
+ "s": "4.0",
+ "poly": [
+  1,
+  -4
+ ],
+ "closed_form": "4"
+}

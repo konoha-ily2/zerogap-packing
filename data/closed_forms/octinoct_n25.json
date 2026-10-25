@@ -1,0 +1,26 @@
+{
+ "record": "octinoct_n25",
+ "piece": "octahedron",
+ "container": "octahedron",
+ "n": 25,
+ "s0": 3.3998303316179,
+ "tol": 1.4300398283756157e-05,
+ "contacts": {
+  "w": 113,
+  "vf": 112,
+  "ee": 115
+ },
+ "equations": 365,
+ "variables": 176,
+ "rank": 154,
+ "kernel": 22,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.26e-70",
+ "determined": true,
+ "minimize": "済",
+ "quick": true,
+ "digits": 57,
+ "s": "3.39982979275069120682128173072751104271069811347278737996",
+ "poly_searched_degree": 24
+}

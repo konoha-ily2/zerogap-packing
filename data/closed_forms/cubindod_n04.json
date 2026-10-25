@@ -1,0 +1,26 @@
+{
+ "record": "cubindod_n04",
+ "piece": "cube",
+ "container": "dodecahedron",
+ "n": 4,
+ "s0": 1.1321175673993,
+ "tol": 3.885790167367926e-05,
+ "contacts": {
+  "w": 21,
+  "vf": 6,
+  "ee": 3
+ },
+ "equations": 34,
+ "variables": 29,
+ "rank": 29,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "9.98e-61",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "1.13211740288066806151978232868566743715394896671790632256",
+ "poly_searched_degree": 24
+}

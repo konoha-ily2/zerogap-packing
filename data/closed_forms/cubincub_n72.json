@@ -1,0 +1,33 @@
+{
+ "record": "cubincub_n72",
+ "piece": "cube",
+ "container": "cube",
+ "n": 72,
+ "s0": 4.7071080933202,
+ "tol": 8.662397989930841e-06,
+ "contacts": {
+  "w": 352,
+  "vf": 2080,
+  "ee": 115
+ },
+ "equations": 2619,
+ "variables": 505,
+ "rank": 483,
+ "kernel": 22,
+ "kernel_s_component": 5.835612203618531e-16,
+ "converged": true,
+ "residual": "8.73e-31",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "1.15e-27",
+ "family": false,
+ "digits": 16,
+ "s": "4.707106781186548",
+ "poly": [
+  2,
+  -16,
+  31
+ ],
+ "closed_form": "√2/2 + 4"
+}

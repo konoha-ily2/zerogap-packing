@@ -1,0 +1,35 @@
+{
+ "record": "cubintet_n77",
+ "piece": "cube",
+ "container": "tetrahedron",
+ "n": 77,
+ "s0": 11.3630831646206,
+ "tol": 4.655734287858366e-06,
+ "contacts": {
+  "w": 172,
+  "vf": 4527,
+  "ee": 7
+ },
+ "equations": 4783,
+ "variables": 540,
+ "rank": 536,
+ "kernel": 4,
+ "kernel_s_component": 9.141035818857832e-16,
+ "converged": true,
+ "residual": "4.17e-127",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "-6.49e-128",
+ "family": false,
+ "digits": 117,
+ "s": "11.3630811007041107834494608324235275178175054689341015129769990934057867887322301272420112397237776209884414852840418",
+ "poly": [
+  1,
+  -12,
+  -18,
+  324,
+  -423
+ ],
+ "closed_form": "3 + 2*√(6*√2 + 9)"
+}

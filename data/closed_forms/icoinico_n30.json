@@ -1,0 +1,26 @@
+{
+ "record": "icoinico_n30",
+ "piece": "icosahedron",
+ "container": "icosahedron",
+ "n": 30,
+ "s0": 3.8225557310971,
+ "tol": 7.03860979708074e-07,
+ "contacts": {
+  "w": 81,
+  "vf": 29,
+  "ee": 125
+ },
+ "equations": 265,
+ "variables": 211,
+ "rank": 210,
+ "kernel": 1,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.12e-73",
+ "determined": true,
+ "minimize": "済",
+ "quick": true,
+ "digits": 57,
+ "s": "3.82255541179356310058636432881559545739063639397704679541",
+ "poly_searched_degree": 24
+}

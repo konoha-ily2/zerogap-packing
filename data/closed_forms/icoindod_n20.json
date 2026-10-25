@@ -1,0 +1,26 @@
+{
+ "record": "icoindod_n20",
+ "piece": "icosahedron",
+ "container": "dodecahedron",
+ "n": 20,
+ "s0": 2.2417657583136,
+ "tol": 1.2789863797214173e-06,
+ "contacts": {
+  "w": 55,
+  "vf": 16,
+  "ee": 61
+ },
+ "equations": 152,
+ "variables": 141,
+ "rank": 139,
+ "kernel": 2,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "4.42e-73",
+ "determined": true,
+ "minimize": "済",
+ "quick": true,
+ "digits": 57,
+ "s": "2.24176556486366494711062959377637433197765380261414837696",
+ "poly_searched_degree": 24
+}

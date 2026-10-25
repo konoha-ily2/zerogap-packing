@@ -1,0 +1,31 @@
+{
+ "record": "octincub_n27",
+ "piece": "octahedron",
+ "container": "cube",
+ "n": 27,
+ "s0": 2.6398657242766,
+ "tol": 3.1622867829423025e-05,
+ "contacts": {
+  "w": 108,
+  "vf": 0,
+  "ee": 324
+ },
+ "equations": 459,
+ "variables": 190,
+ "rank": 190,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "3.07e-122",
+ "determined": true,
+ "recheck_diff": "-5.69e-123",
+ "family": false,
+ "digits": 117,
+ "s": "2.63986531642977742442981895185810307999672083403696973659646884424936729312926647252072339741159760243869251296436962",
+ "poly": [
+  225,
+  0,
+  -1568
+ ],
+ "closed_form": "28*√2/15"
+}

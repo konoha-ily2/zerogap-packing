@@ -1,0 +1,26 @@
+{
+ "record": "dodincub_n05",
+ "piece": "dodecahedron",
+ "container": "cube",
+ "n": 5,
+ "s0": 4.6270183185051,
+ "tol": 6.26262077214287e-06,
+ "contacts": {
+  "w": 27,
+  "vf": 8,
+  "ee": 3
+ },
+ "equations": 43,
+ "variables": 36,
+ "rank": 36,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.75e-73",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "4.62701799190706726451543635676152858877262638362823604076",
+ "poly_searched_degree": 24
+}

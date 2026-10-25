@@ -1,0 +1,26 @@
+{
+ "record": "octincub_n14",
+ "piece": "octahedron",
+ "container": "cube",
+ "n": 14,
+ "s0": 2.3654755633302,
+ "tol": 2.0266453765132245e-05,
+ "contacts": {
+  "w": 45,
+  "vf": 4,
+  "ee": 32
+ },
+ "equations": 95,
+ "variables": 99,
+ "rank": 89,
+ "kernel": 10,
+ "kernel_s_component": 1.6539413970565978e-16,
+ "converged": true,
+ "residual": "9.91e-71",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "2.36547517361977529191068793102260600632272860739932554243",
+ "poly_searched_degree": 24
+}

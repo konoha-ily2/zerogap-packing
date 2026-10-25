@@ -1,0 +1,32 @@
+{
+ "record": "icoinico_n08",
+ "piece": "icosahedron",
+ "container": "icosahedron",
+ "n": 8,
+ "s0": 2.4966170580654,
+ "tol": 3.162315442215489e-05,
+ "contacts": {
+  "w": 42,
+  "vf": 52,
+  "ee": 68
+ },
+ "equations": 170,
+ "variables": 57,
+ "rank": 57,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "8.56e-124",
+ "determined": true,
+ "minimize": "なし",
+ "recheck_diff": "7.04e-125",
+ "family": false,
+ "digits": 117,
+ "s": "2.49661682673375903195972146884084057692807106237387659517644530804108371848463809162380121736290024312893177117702476",
+ "poly": [
+  31,
+  -81,
+  9
+ ],
+ "closed_form": "33*√5/62 + 81/62"
+}

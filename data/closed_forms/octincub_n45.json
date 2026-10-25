@@ -1,0 +1,28 @@
+{
+ "record": "octincub_n45",
+ "piece": "octahedron",
+ "container": "cube",
+ "n": 45,
+ "s0": 3.3554696012418,
+ "tol": 1.990707914626574e-06,
+ "contacts": {
+  "w": 106,
+  "vf": 40,
+  "ee": 139
+ },
+ "equations": 330,
+ "variables": 316,
+ "rank": 309,
+ "kernel": 7,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "4.61e-128",
+ "determined": true,
+ "minimize": "済",
+ "quick": false,
+ "recheck_diff": "9.69e-116",
+ "family": false,
+ "digits": 112,
+ "s": "3.355469090282229377416341955323370450525656012765837269605548238467005172812997173660608304370679606979538818904",
+ "poly_searched_degree": 24
+}

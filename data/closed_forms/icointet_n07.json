@@ -1,0 +1,28 @@
+{
+ "record": "icointet_n07",
+ "piece": "icosahedron",
+ "container": "tetrahedron",
+ "n": 7,
+ "s0": 7.0006578938009,
+ "tol": 2.719413201325012e-06,
+ "contacts": {
+  "w": 18,
+  "vf": 2,
+  "ee": 0
+ },
+ "equations": 27,
+ "variables": 50,
+ "rank": 21,
+ "kernel": 29,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "7.33e-122",
+ "determined": true,
+ "minimize": "済",
+ "quick": false,
+ "recheck_diff": "4.4e-68",
+ "family": false,
+ "digits": 64,
+ "s": "7.000657194741876214850346535660440151624225672720278879046421964",
+ "poly_searched_degree": 24
+}

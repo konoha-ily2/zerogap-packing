@@ -1,0 +1,26 @@
+{
+ "record": "dodintet_n06",
+ "piece": "dodecahedron",
+ "container": "tetrahedron",
+ "n": 6,
+ "s0": 10.5191881437706,
+ "tol": 2.4919430422764924e-05,
+ "contacts": {
+  "w": 32,
+  "vf": 16,
+  "ee": 6
+ },
+ "equations": 60,
+ "variables": 43,
+ "rank": 43,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.69e-74",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "10.5191874266888274838333809182500305152979225208931884846",
+ "poly_searched_degree": 24
+}

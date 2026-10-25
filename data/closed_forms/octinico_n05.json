@@ -1,0 +1,26 @@
+{
+ "record": "octinico_n05",
+ "piece": "octahedron",
+ "container": "icosahedron",
+ "n": 5,
+ "s0": 1.4420550021084,
+ "tol": 4.953691298153974e-06,
+ "contacts": {
+  "w": 28,
+  "vf": 2,
+  "ee": 7
+ },
+ "equations": 42,
+ "variables": 36,
+ "rank": 36,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "2.29e-75",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "1.44205474660161655898309712187057190482075176722330262803",
+ "poly_searched_degree": 24
+}

@@ -1,0 +1,35 @@
+{
+ "record": "cubintet_n08",
+ "piece": "cube",
+ "container": "tetrahedron",
+ "n": 8,
+ "s0": 5.5574949039397,
+ "tol": 3.765089600333975e-05,
+ "contacts": {
+  "w": 52,
+  "vf": 60,
+  "ee": 8
+ },
+ "equations": 128,
+ "variables": 57,
+ "rank": 57,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "9.15e-133",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "3.3e-134",
+ "family": false,
+ "digits": 117,
+ "s": "5.55749405915420461382868531814378578013597082467153633901713613311389915931465450333895760735559190729642544683486135",
+ "poly": [
+  729,
+  -5832,
+  8208,
+  13824,
+  -24704
+ ],
+ "closed_form": "2 + 2*√3*√(30*√2 + 43)/9"
+}

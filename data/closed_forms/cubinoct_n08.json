@@ -1,0 +1,32 @@
+{
+ "record": "cubinoct_n08",
+ "piece": "cube",
+ "container": "octahedron",
+ "n": 8,
+ "s0": 3.4142139780328,
+ "tol": 3.1622779981315493e-05,
+ "contacts": {
+  "w": 32,
+  "vf": 456,
+  "ee": 0
+ },
+ "equations": 496,
+ "variables": 57,
+ "rank": 57,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "2.58e-124",
+ "determined": true,
+ "minimize": "なし",
+ "recheck_diff": "-8.7e-126",
+ "family": false,
+ "digits": 117,
+ "s": "3.4142135623730950488016887242096980785696718753769480731766797379907324784621070388503875343276415727350138462309123",
+ "poly": [
+  1,
+  -4,
+  2
+ ],
+ "closed_form": "√2 + 2"
+}

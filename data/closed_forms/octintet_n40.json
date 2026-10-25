@@ -1,0 +1,31 @@
+{
+ "record": "octintet_n40",
+ "piece": "octahedron",
+ "container": "tetrahedron",
+ "n": 40,
+ "s0": 6.4285724608582,
+ "tol": 1.4754528016720328e-05,
+ "contacts": {
+  "w": 169,
+  "vf": 608,
+  "ee": 164
+ },
+ "equations": 981,
+ "variables": 281,
+ "rank": 274,
+ "kernel": 7,
+ "kernel_s_component": 3.978715889221035e-17,
+ "converged": true,
+ "residual": "5.43e-131",
+ "determined": true,
+ "minimize": "なし",
+ "recheck_diff": "-1.16e-131",
+ "family": false,
+ "digits": 117,
+ "s": "6.42857142857142857142857142857142857142857142857142857142857142857142857142857142857142857142857142857142857142857143",
+ "poly": [
+  7,
+  -45
+ ],
+ "closed_form": "45/7"
+}

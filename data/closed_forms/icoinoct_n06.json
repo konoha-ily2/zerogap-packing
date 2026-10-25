@@ -1,0 +1,35 @@
+{
+ "record": "icoinoct_n06",
+ "piece": "icosahedron",
+ "container": "octahedron",
+ "n": 6,
+ "s0": 3.5070200309613,
+ "tol": 3.2840769593621256e-05,
+ "contacts": {
+  "w": 72,
+  "vf": 24,
+  "ee": 24
+ },
+ "equations": 126,
+ "variables": 43,
+ "rank": 43,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "3.78e-133",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "7.15e-134",
+ "family": false,
+ "digits": 117,
+ "s": "3.5070196660589774436015023547001177917578451708500543462424773415243425393292148203023208775181671282718083140727024",
+ "poly": [
+  100,
+  0,
+  -1230,
+  0,
+  1
+ ],
+ "closed_form": "√(275*√5 + 615)/10"
+}

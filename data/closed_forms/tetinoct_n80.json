@@ -1,0 +1,28 @@
+{
+ "record": "tetinoct_n80",
+ "piece": "tetrahedron",
+ "container": "octahedron",
+ "n": 80,
+ "s0": 3.3208393915694,
+ "tol": 6.330511701712629e-06,
+ "contacts": {
+  "w": 160,
+  "vf": 187,
+  "ee": 231
+ },
+ "equations": 658,
+ "variables": 561,
+ "rank": 561,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "3.11e-121",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "1.52e-123",
+ "family": false,
+ "digits": 117,
+ "s": "3.32084994723379513531728290109613335203132596617822537177852871491248073880395702309025448183197258397716109852185415",
+ "poly_searched_degree": 24
+}

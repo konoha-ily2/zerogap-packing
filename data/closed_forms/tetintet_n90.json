@@ -1,0 +1,33 @@
+{
+ "record": "tetintet_n90",
+ "piece": "tetrahedron",
+ "container": "tetrahedron",
+ "n": 90,
+ "s0": 6.2293322631929,
+ "tol": 5.698541618169764e-06,
+ "contacts": {
+  "w": 140,
+  "vf": 2008,
+  "ee": 109
+ },
+ "equations": 2347,
+ "variables": 631,
+ "rank": 616,
+ "kernel": 15,
+ "kernel_s_component": 1.8580665204189185e-16,
+ "converged": true,
+ "residual": "3.42e-128",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "-1.08e-129",
+ "family": false,
+ "digits": 117,
+ "s": "6.22933051195943051672086914821198248433316209908799934284809978969340013094135829175329740211625417034623516723520914",
+ "poly": [
+  59201939745,
+  -9061362424404,
+  54148916288582
+ ],
+ "closed_form": "503409023578/6577993305 - 6027514273*√654/2192664435"
+}

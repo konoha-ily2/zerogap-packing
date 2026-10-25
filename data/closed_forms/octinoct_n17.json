@@ -1,0 +1,31 @@
+{
+ "record": "octinoct_n17",
+ "piece": "octahedron",
+ "container": "octahedron",
+ "n": 17,
+ "s0": 3.000000489898,
+ "tol": 3.1622779911098834e-05,
+ "contacts": {
+  "w": 126,
+  "vf": 920,
+  "ee": 0
+ },
+ "equations": 1063,
+ "variables": 120,
+ "rank": 120,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.35e-123",
+ "determined": true,
+ "minimize": "なし",
+ "recheck_diff": "-2.6e-124",
+ "family": false,
+ "digits": 117,
+ "s": "3.0",
+ "poly": [
+  1,
+  -3
+ ],
+ "closed_form": "3"
+}

@@ -1,0 +1,26 @@
+{
+ "record": "cubinico_n11",
+ "piece": "cube",
+ "container": "icosahedron",
+ "n": 11,
+ "s0": 2.1913308501501,
+ "tol": 5.110969620553928e-05,
+ "contacts": {
+  "w": 33,
+  "vf": 21,
+  "ee": 26
+ },
+ "equations": 91,
+ "variables": 78,
+ "rank": 78,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.37e-62",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "2.19132657642358625221662484889706557912505639573476134783",
+ "poly_searched_degree": 24
+}

@@ -1,0 +1,35 @@
+{
+ "record": "cubinoct_n41",
+ "piece": "cube",
+ "container": "octahedron",
+ "n": 41,
+ "s0": 5.8637044959035,
+ "tol": 1.5654708736931762e-05,
+ "contacts": {
+  "w": 98,
+  "vf": 1969,
+  "ee": 17
+ },
+ "equations": 2125,
+ "variables": 288,
+ "rank": 287,
+ "kernel": 1,
+ "kernel_s_component": 2.2283011882713974e-16,
+ "converged": true,
+ "residual": "2.55e-129",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "8.73e-131",
+ "family": false,
+ "digits": 117,
+ "s": "5.86370330515627314699897279891558947053561935603361820160937230524169285591942206539024696743228180755360844745752649",
+ "poly": [
+  1,
+  -8,
+  8,
+  32,
+  -32
+ ],
+ "closed_form": "2 + 2*√(√3 + 2)"
+}

@@ -1,0 +1,32 @@
+{
+ "record": "cubindod_n50",
+ "piece": "cube",
+ "container": "dodecahedron",
+ "n": 50,
+ "s0": 2.4721362302154,
+ "tol": 3.162278135054037e-05,
+ "contacts": {
+  "w": 76,
+  "vf": 4128,
+  "ee": 0
+ },
+ "equations": 4254,
+ "variables": 351,
+ "rank": 351,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "8.41e-123",
+ "determined": true,
+ "minimize": "なし",
+ "recheck_diff": "4.32e-124",
+ "family": false,
+ "digits": 117,
+ "s": "2.47213595499957939281834733746255247088123671922305144854179449082104185127560979882882881675756454993901635230154757",
+ "poly": [
+  1,
+  4,
+  -16
+ ],
+ "closed_form": "-2 + 2*√5"
+}

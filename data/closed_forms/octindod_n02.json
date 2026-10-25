@@ -1,0 +1,35 @@
+{
+ "record": "octindod_n02",
+ "piece": "octahedron",
+ "container": "dodecahedron",
+ "n": 2,
+ "s0": 0.7400668100855,
+ "tol": 3.1713801772308904e-05,
+ "contacts": {
+  "w": 12,
+  "vf": 0,
+  "ee": 6
+ },
+ "equations": 20,
+ "variables": 15,
+ "rank": 15,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "5.49e-125",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "1.27e-121",
+ "family": false,
+ "digits": 117,
+ "s": "0.740066684264954558671850719228524308677039994390440067407539868540967937150913660440896463603074424130449930074491775",
+ "poly": [
+  9,
+  48,
+  32,
+  -32,
+  -16
+ ],
+ "closed_form": "-4/3 + (2*√(3 - √5) + 2*√5)/3"
+}

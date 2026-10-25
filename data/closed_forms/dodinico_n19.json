@@ -1,0 +1,26 @@
+{
+ "record": "dodinico_n19",
+ "piece": "dodecahedron",
+ "container": "icosahedron",
+ "n": 19,
+ "s0": 5.0793670401575,
+ "tol": 3.3254166862643676e-06,
+ "contacts": {
+  "w": 51,
+  "vf": 44,
+  "ee": 33
+ },
+ "equations": 147,
+ "variables": 134,
+ "rank": 128,
+ "kernel": 6,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "3.93e-63",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "5.07936674527968068208032204808526562657260020178613457336",
+ "poly_searched_degree": 24
+}

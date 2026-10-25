@@ -1,0 +1,26 @@
+{
+ "record": "cubintet_n20",
+ "piece": "cube",
+ "container": "tetrahedron",
+ "n": 20,
+ "s0": 6.8840031943108,
+ "tol": 5.3567586892868184e-05,
+ "contacts": {
+  "w": 112,
+  "vf": 40,
+  "ee": 26
+ },
+ "equations": 198,
+ "variables": 141,
+ "rank": 138,
+ "kernel": 3,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "2.44e-61",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "6.88398449701296497318142488841156515607818494008982992133",
+ "poly_searched_degree": 24
+}

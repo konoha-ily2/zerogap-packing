@@ -1,0 +1,32 @@
+{
+ "record": "octincub_n71",
+ "piece": "octahedron",
+ "container": "cube",
+ "n": 71,
+ "s0": 3.7712367127391,
+ "tol": 3.6514901037640444e-05,
+ "contacts": {
+  "w": 192,
+  "vf": 4608,
+  "ee": 0
+ },
+ "equations": 4871,
+ "variables": 498,
+ "rank": 498,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "9.1e-122",
+ "determined": true,
+ "minimize": "なし",
+ "recheck_diff": "2.37e-123",
+ "family": false,
+ "digits": 117,
+ "s": "3.77123616632825346347116993122586154285245833433852819513781263464195327589895210360103342487371086062670358994909946",
+ "poly": [
+  9,
+  0,
+  -128
+ ],
+ "closed_form": "8*√2/3"
+}

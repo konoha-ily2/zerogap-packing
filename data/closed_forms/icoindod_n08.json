@@ -1,0 +1,26 @@
+{
+ "record": "icoindod_n08",
+ "piece": "icosahedron",
+ "container": "dodecahedron",
+ "n": 8,
+ "s0": 1.6977897500714,
+ "tol": 9.915579354226939e-06,
+ "contacts": {
+  "w": 26,
+  "vf": 8,
+  "ee": 16
+ },
+ "equations": 58,
+ "variables": 57,
+ "rank": 57,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "7.68e-64",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "1.69778959237817582236634404943637325761117826125243718596",
+ "poly_searched_degree": 24
+}

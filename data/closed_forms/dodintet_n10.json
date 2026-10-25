@@ -1,0 +1,26 @@
+{
+ "record": "dodintet_n10",
+ "piece": "dodecahedron",
+ "container": "tetrahedron",
+ "n": 10,
+ "s0": 11.0840249033604,
+ "tol": 5.585616355920054e-05,
+ "contacts": {
+  "w": 55,
+  "vf": 8,
+  "ee": 12
+ },
+ "equations": 85,
+ "variables": 71,
+ "rank": 71,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "3.16e-61",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "11.0840146886786167330394411720912834252791458187145886234",
+ "poly_searched_degree": 24
+}

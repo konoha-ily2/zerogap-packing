@@ -1,0 +1,36 @@
+{
+ "record": "tetinoct_n06",
+ "piece": "tetrahedron",
+ "container": "octahedron",
+ "n": 6,
+ "s0": 1.4818610652181,
+ "tol": 4.463680189097695e-05,
+ "contacts": {
+  "w": 36,
+  "vf": 6,
+  "ee": 6
+ },
+ "equations": 54,
+ "variables": 43,
+ "rank": 43,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "3.39e-134",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "6.88e-136",
+ "family": false,
+ "digits": 117,
+ "s": "1.48186057633206244661218514849949442687549147328146847092328472741269610609285084248740481450785620390221539827680969",
+ "poly": [
+  8,
+  -16,
+  -4,
+  4,
+  0,
+  6,
+  27
+ ]
+}

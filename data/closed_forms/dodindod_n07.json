@@ -1,0 +1,32 @@
+{
+ "record": "dodindod_n07",
+ "piece": "dodecahedron",
+ "container": "dodecahedron",
+ "n": 7,
+ "s0": 2.4270511370091,
+ "tol": 3.162279075957126e-05,
+ "contacts": {
+  "w": 60,
+  "vf": 60,
+  "ee": 30
+ },
+ "equations": 157,
+ "variables": 50,
+ "rank": 50,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "3.14e-123",
+ "determined": true,
+ "minimize": "なし",
+ "recheck_diff": "7.67e-124",
+ "family": false,
+ "digits": 117,
+ "s": "2.42705098312484227230688025154845717658046376970864429320317293405789069422835367456081080628408670622713113211308034",
+ "poly": [
+  4,
+  -6,
+  -9
+ ],
+ "closed_form": "3/4 + 3*√5/4"
+}

@@ -1,0 +1,26 @@
+{
+ "record": "cubintet_n74",
+ "piece": "cube",
+ "container": "tetrahedron",
+ "n": 74,
+ "s0": 11.3630831646206,
+ "tol": 4.655734290438601e-06,
+ "contacts": {
+  "w": 162,
+  "vf": 4377,
+  "ee": 7
+ },
+ "equations": 4620,
+ "variables": 519,
+ "rank": 514,
+ "kernel": 5,
+ "kernel_s_component": 5.023742485054268e-14,
+ "converged": true,
+ "residual": "7.2e-21",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 17,
+ "s": "11.363081100704111",
+ "poly_searched_degree": 11
+}

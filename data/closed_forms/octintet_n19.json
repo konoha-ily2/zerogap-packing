@@ -1,0 +1,32 @@
+{
+ "record": "octintet_n19",
+ "piece": "octahedron",
+ "container": "tetrahedron",
+ "n": 19,
+ "s0": 5.0000153612684,
+ "tol": 0.0003769240915608155,
+ "contacts": {
+  "w": 117,
+  "vf": 888,
+  "ee": 39
+ },
+ "equations": 1063,
+ "variables": 134,
+ "rank": 134,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.1e-123",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "4.99e-126",
+ "family": false,
+ "digits": 117,
+ "s": "5.0",
+ "poly": [
+  1,
+  -5
+ ],
+ "closed_form": "5"
+}

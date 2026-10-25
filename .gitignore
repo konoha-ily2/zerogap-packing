@@ -1,0 +1,6 @@
+# downloaded from the catalogue at run time
+data/records/
+data/src/
+data/improved/
+data/logs/
+__pycache__/

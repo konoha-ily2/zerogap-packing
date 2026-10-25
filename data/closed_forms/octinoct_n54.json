@@ -1,0 +1,30 @@
+{
+ "record": "octinoct_n54",
+ "piece": "octahedron",
+ "container": "octahedron",
+ "n": 54,
+ "s0": 4.3750007126913,
+ "tol": 5.143255794325602e-07,
+ "contacts": {
+  "w": 182,
+  "vf": 271,
+  "ee": 302
+ },
+ "equations": 809,
+ "variables": 379,
+ "rank": 362,
+ "kernel": 17,
+ "kernel_s_component": 2.731911307608822e-16,
+ "converged": true,
+ "residual": "3.34e-62",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "4.375",
+ "poly": [
+  8,
+  -35
+ ],
+ "closed_form": "35/8"
+}
