@@ -146,7 +146,7 @@ def gj_k(eqs, ncol):
         piv[pc] = r
     return piv
 
-def exact_centers(cf_float, Rk, s, SOL, piece, cont, L=2**16):
+def exact_centers(cf_float, Rk, s, SOL, piece, cont, L=2**16, skip=()):
     PV, PN, PH, PE = solid_k(piece, SOL); CV, CN, CH = solid_k(cont, SOL)[:3]; faces = SOL[piece]["faces"]
     n = len(cf_float); f = lambda v: np.array([float(t) for t in v])
     Rf = [np.array([[float(t) for t in row] for row in R]) for R in Rk]; Vf = np.array([f(v) for v in PV])
@@ -155,6 +155,7 @@ def exact_centers(cf_float, Rk, s, SOL, piece, cont, L=2**16):
     rv = [[T.rot(R, v) for v in PV] for R in Rk]                     # 正確な R v
     eqs = []; ncol = 3*n
     def addeq(coef, rhs):                                            # coef: {列: K}、右辺 rhs
+        if any(c//3 in skip for c in coef): return                      # 回転を近似した駒の接触は使わない（その駒は浮動小数の位置を丸める）
         r = {c: v for c, v in coef.items() if v != 0}; r[ncol] = rhs; eqs.append(r)
     sf = float(s)
     for i in range(n):
@@ -202,7 +203,7 @@ def one(rid):
     fn = RT.config_for(rid, float(s))
     if not fn: return "配置ファイルがない", ""
     rec = json.load(open(fn, encoding="utf-8")); lam = float(rec["s_full"])/float(s); cc = rec.get("container_center", [0, 0, 0])
-    pieces, snapped = [], 0
+    pieces, snapped = [], 0; ratq = set()
     for i, p in enumerate(rec["pieces"]):
         Rf = RT.quatR(p[3:7]); R = [[recog_rot_all(t) for t in row] for row in Rf]
         ok = not any(t is None for row in R for t in row) and all(T.dot(R[a], R[b]) == (1 if a == b else 0) for a in range(3) for b in range(3))
@@ -210,18 +211,20 @@ def one(rid):
             R2 = snap_rot_k(Rf)
             if R2 is None:                                     # 0, ±1, ±1/2, ±√2/2 への丸め（ずれ 0.15 まで）
                 Rs = RT.snap_rot(Rf); R2 = [[K.from_json(t) for t in row] for row in Rs] if Rs else None
-            if R2 is None:
-                t = next((t for row, rr in zip(Rf, R) for t, v in zip(row, rr) if v is None), None)
-                return "回転を認識できない", (f"駒 {i} の成分 {t:.9f}" if t is not None else f"駒 {i}（認識した成分が直交にならない）")
+            if R2 is None:                                     # 最後の手：四元数を分数に近似（H(q)/|q|² は正確に直交）。遊んでいる駒向け
+                q = [Fr(t).limit_denominator(10**7) for t in p[3:7]]; w_, a_, b_, d_ = q; L_ = w_*w_ + a_*a_ + b_*b_ + d_*d_
+                H_ = [[w_*w_+a_*a_-b_*b_-d_*d_, 2*(a_*b_-w_*d_), 2*(a_*d_+w_*b_)], [2*(a_*b_+w_*d_), w_*w_-a_*a_+b_*b_-d_*d_, 2*(b_*d_-w_*a_)],
+                      [2*(a_*d_-w_*b_), 2*(b_*d_+w_*a_), w_*w_-a_*a_-b_*b_+d_*d_]]
+                R2 = [[K(t/L_) for t in row] for row in H_]; ratq.add(i)
             R = R2; snapped += 1
         pieces.append(dict(c=[(p[k] - cc[k])/lam for k in range(3)], R=R))
     # まず接触の一次方程式で中心を正確に解く
-    cen, neq, fr_ = exact_centers([p["c"] for p in pieces], [p["R"] for p in pieces], s, SOL, rec["piece"], rec["container"])
+    cen, neq, fr_ = exact_centers([p["c"] for p in pieces], [p["R"] for p in pieces], s, SOL, rec["piece"], rec["container"], skip=ratq)
     if cen is not None:
         dd = dict(record_id=rid, piece=rec["piece"], container=rec["container"], n=len(pieces), s=s.to_json(), source=os.path.relpath(fn, HERE),
                   closed_form=cf["closed_form"], pieces=[dict(c=[t.to_json() for t in c], R=[[t.to_json() for t in row] for row in p["R"]]) for c, p in zip(cen, pieces)])
         code, msg = T.check(dd, SOL, quiet=True)
-        info = f"接触の一次方程式 {neq} 本で中心を正確に解いた（自由な座標 {fr_[0]}、浮動小数からのずれ {fr_[1]:.1e}）、回転を丸めた駒 {snapped}"
+        info = f"接触の一次方程式 {neq} 本で中心を正確に解いた（自由な座標 {fr_[0]}、浮動小数からのずれ {fr_[1]:.1e}）、回転を丸めた駒 {snapped}（うち四元数の分数近似 {len(ratq)}）"
         if code == 0:
             os.makedirs(OUT, exist_ok=True); json.dump(dd, open(os.path.join(OUT, rid + ".json"), "w", encoding="utf-8"), indent=1)
             return "EXACT-VALID", info

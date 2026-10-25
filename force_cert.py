@@ -155,7 +155,7 @@ def lp_max(c, A, b, tol=1e-10):
     Tb = np.hstack([A, np.eye(m), b[:, None]]); basis = list(range(k, k + m))
     def run(cost, allowed, bland):
         z = cost - cost[basis] @ Tb
-        for it in range(50000):
+        for it in range(5000):
             cand = [j for j in allowed if z[j] < -tol]
             if not cand: return True
             enter = cand[0] if bland else min(cand, key=lambda j: z[j])
@@ -312,82 +312,97 @@ def main(fn):
     print(f"{d.get('record_id', fn)}：{n} 個、s = {T.num(d['s'])}")
     print(f"  使う触れ合い：{kinds}。外した退化した触れ合い：{degen}")
     print(f"  触れ合う組 {len(tp)}、そのうち退化していない触れ合いを持つ組 {len(ndp)}")
-    A = np.array([[float(t) for t in r[2]] for r in rows]).T; b = np.zeros(nvar); b[0] = 1.0
-    lam, basis = simplex_phase1(A, b)
-    if lam is None:
-        print("  力が見つからない → 使った触れ合いだけでは、一次で箱を縮める動きが残る（退化した触れ合いの場合分けが要るか、本当に縮められる）")
-        return 1
-    # 力の組は一通りではない。列の順番を変えて単体法を何回か解き（ブランドの規則は列の順に依る）、正確な解を平均して力を散らす
-    # （正しい力の平均もまた正しい力。力のかかる触れ合いが増えると怪しい方向が減り、二次の検査が通りやすくなる）
-    sols = []; rng = np.random.default_rng(0); NRUN = int(os.environ.get("NRUN", 6))
-    ms = max_support(A, b)
-    if ms is not None:
-        # 正の列だけで正確に解く。台が基底より大きいので解は一通りでない：浮動小数の解に近い頂点を、台の中で単体法の第 1 段で取り直し、
-        # 列の順を変えた複数の頂点の平均にする（いずれも台の上の正しい力）
-        supp = [j for j in range(A.shape[1]) if ms[j] > 1e-9]
-        # 台の列すべてで連立方程式を立て、自由な列は浮動小数の解を分数に丸めた値に固定し、残りを正確に解く
-        eqs = []
-        for v in range(nvar):
-            r = {q: rows[j][2][v] for q, j in enumerate(supp) if rows[j][2][v] != 0}
-            if v == 0: r[len(supp)] = Q2(1)
-            if r: eqs.append(r)
-        piv = gauss_jordan(eqs, len(supp))
-        if piv is not None:
-            fv = {q: Q2(Fr(float(ms[j])).limit_denominator(10**6)) for q, j in enumerate(supp) if q not in piv}
-            val = dict(fv)
-            for q, r in piv.items(): val[q] = r.get(len(supp), Q2(0)) - sum((c*fv[t] for t, c in r.items() if t != len(supp) and t != q), Q2(0))
-            if all(v.sign() > 0 for v in val.values()): sols.append({supp[q]: v for q, v in val.items()})
-        print(f"  力のかかる触れ合いを最大にする線形計画：台 {len(supp)} 本" + ("" if sols else "（正確な正の解にならなかった）"))
+    # 触れ合いの組を変えて試す：二次の検査は λ の選び方で結果が変わるので、全部の触れ合いで決着しなければ、面の重なりの端を除いた組でも試す
+    # （どちらも局所的に必ず従う条件の一部なので、どちらかで通れば結論は正しい）
+    def attempt(rows, label):
+        print(f"  ［{label}：触れ合い {len(rows)} 本］")
+        A = np.array([[float(t) for t in r[2]] for r in rows]).T; b = np.zeros(nvar); b[0] = 1.0
+        lam, basis = simplex_phase1(A, b)
+        if lam is None:
+            print("  力が見つからない → 使った触れ合いだけでは、一次で箱を縮める動きが残る（退化した触れ合いの場合分けが要るか、本当に縮められる）")
+            return 1
+        # 力の組は一通りではない。列の順番を変えて単体法を何回か解き（ブランドの規則は列の順に依る）、正確な解を平均して力を散らす
+        # （正しい力の平均もまた正しい力。力のかかる触れ合いが増えると怪しい方向が減り、二次の検査が通りやすくなる）
+        sols = []; rng = np.random.default_rng(0); NRUN = int(os.environ.get("NRUN", 6))
+        ms = max_support(A, b)
+        if ms is not None:
+            # 正の列だけで正確に解く。台が基底より大きいので解は一通りでない：浮動小数の解に近い頂点を、台の中で単体法の第 1 段で取り直し、
+            # 列の順を変えた複数の頂点の平均にする（いずれも台の上の正しい力）
+            supp = [j for j in range(A.shape[1]) if ms[j] > 1e-9]
+            # 台の列すべてで連立方程式を立て、自由な列は浮動小数の解を分数に丸めた値に固定し、残りを正確に解く
+            eqs = []
+            for v in range(nvar):
+                r = {q: rows[j][2][v] for q, j in enumerate(supp) if rows[j][2][v] != 0}
+                if v == 0: r[len(supp)] = Q2(1)
+                if r: eqs.append(r)
+            piv = gauss_jordan(eqs, len(supp))
+            if piv is not None:
+                fv = {q: Q2(Fr(float(ms[j])).limit_denominator(10**6)) for q, j in enumerate(supp) if q not in piv}
+                val = dict(fv)
+                for q, r in piv.items(): val[q] = r.get(len(supp), Q2(0)) - sum((c*fv[t] for t, c in r.items() if t != len(supp) and t != q), Q2(0))
+                if all(v.sign() > 0 for v in val.values()): sols.append({supp[q]: v for q, v in val.items()})
+            print(f"  力のかかる触れ合いを最大にする線形計画：台 {len(supp)} 本" + ("" if sols else "（正確な正の解にならなかった）"))
+            for run in range(NRUN if not sols else 0):
+                order = supp if run == 0 else list(rng.permutation(supp))
+                lr, br = simplex_phase1(A[:, order], b)
+                if lr is None: continue
+                bcols = [order[j] for j in br]; ex = exact_solve(bcols, rows, nvar)
+                if ex is not None and all(t.sign() >= 0 for t in ex): sols.append(dict(zip(bcols, ex)))
         for run in range(NRUN if not sols else 0):
-            order = supp if run == 0 else list(rng.permutation(supp))
-            lr, br = simplex_phase1(A[:, order], b)
+            perm = np.arange(A.shape[1]) if run == 0 else rng.permutation(A.shape[1])
+            lr, br = (lam, basis) if run == 0 else simplex_phase1(A[:, perm], b)
             if lr is None: continue
-            bcols = [order[j] for j in br]; ex = exact_solve(bcols, rows, nvar)
-            if ex is not None and all(t.sign() >= 0 for t in ex): sols.append(dict(zip(bcols, ex)))
-    for run in range(NRUN if not sols else 0):
-        perm = np.arange(A.shape[1]) if run == 0 else rng.permutation(A.shape[1])
-        lr, br = (lam, basis) if run == 0 else simplex_phase1(A[:, perm], b)
-        if lr is None: continue
-        bcols = list(br) if run == 0 else [int(perm[j]) for j in br]
-        ex = exact_solve(bcols, rows, nvar)
-        if ex is None or any(t.sign() < 0 for t in ex): continue
-        sols.append(dict(zip(bcols, ex)))
-    if not sols: print("  浮動小数点では力が見つかったが、正確な数で 0 以上の解にならなかった"); return 1
-    lamd = {}
-    for sd in sols:
-        for j, l in sd.items(): lamd[j] = lamd.get(j, Q2(0)) + l*Q2(Fr(1, len(sols)))
-    full = [Q2(0)]*nvar
-    for j, l in lamd.items():
-        for v in range(nvar): full[v] = full[v] + l*rows[j][2][v]
-    assert full[0] == 1 and all(t == 0 for t in full[1:]), "つり合いの検算に失敗"
-    pos = [j for j, l in lamd.items() if l.sign() > 0]
-    print(f"  力のつり合い：正の力 {len(pos)} 本（壁 {sum(1 for j in pos if rows[j][0] == '壁')}、{len(sols)} 通りの解の平均）で、すべての駒の力とねじる力が正確に 0、壁の仕事が 1")
-    print("  FIRST-ORDER-CERTIFIED：一次では箱を縮められない")
-    loaded = sorted({i for j in pos for i in ([rows[j][1]] if rows[j][0] == "壁" else list(rows[j][1]))})
-    lam_pos = [lamd[j] for j in pos]
-    m, mt, verdict = second_order(n, rows, cs, pos, lam_pos, loaded)
-    print(f"  力のかかった駒 {len(loaded)} / {n}。怪しい方向（ds = 0、力のかかった触れ合いを一次で保つ）{m} 次元、そのうち平行移動だけの方向（滑れる駒）{mt} 次元")
-    if verdict == "strict":
-        print("  SECOND-ORDER-CERTIFIED：怪しい方向すべてで −Σλq が正（または怪しい方向がない）→ s は厳密な局所最小（力のかからない駒を除く）")
-    elif verdict == "slides":
-        print("  LOCAL-MIN（滑れる駒を除く）：−Σλq は平行移動だけの方向で 0、残りの方向で正 → 滑れる動きを除いて局所最小")
-    else:
-        print("  二次の検査で決着しない（この λ では −Σλq が半正定値にならない）")
-    return 0 if verdict != "no" else 2
+            bcols = list(br) if run == 0 else [int(perm[j]) for j in br]
+            ex = exact_solve(bcols, rows, nvar)
+            if ex is None or any(t.sign() < 0 for t in ex): continue
+            sols.append(dict(zip(bcols, ex)))
+        if not sols: print("  浮動小数点では力が見つかったが、正確な数で 0 以上の解にならなかった"); return 1
+        lamd = {}
+        for sd in sols:
+            for j, l in sd.items(): lamd[j] = lamd.get(j, Q2(0)) + l*Q2(Fr(1, len(sols)))
+        full = [Q2(0)]*nvar
+        for j, l in lamd.items():
+            for v in range(nvar): full[v] = full[v] + l*rows[j][2][v]
+        assert full[0] == 1 and all(t == 0 for t in full[1:]), "つり合いの検算に失敗"
+        pos = [j for j, l in lamd.items() if l.sign() > 0]
+        print(f"  力のつり合い：正の力 {len(pos)} 本（壁 {sum(1 for j in pos if rows[j][0] == '壁')}、{len(sols)} 通りの解の平均）で、すべての駒の力とねじる力が正確に 0、壁の仕事が 1")
+        print("  FIRST-ORDER-CERTIFIED：一次では箱を縮められない")
+        loaded = sorted({i for j in pos for i in ([rows[j][1]] if rows[j][0] == "壁" else list(rows[j][1]))})
+        lam_pos = [lamd[j] for j in pos]
+        m, mt, verdict = second_order(n, rows, cs, pos, lam_pos, loaded)
+        print(f"  力のかかった駒 {len(loaded)} / {n}。怪しい方向（ds = 0、力のかかった触れ合いを一次で保つ）{m} 次元、そのうち平行移動だけの方向（滑れる駒）{mt} 次元")
+        if verdict == "strict":
+            print("  SECOND-ORDER-CERTIFIED：怪しい方向すべてで −Σλq が正（または怪しい方向がない）→ s は厳密な局所最小（力のかからない駒を除く）")
+        elif verdict == "slides":
+            print("  LOCAL-MIN（滑れる駒を除く）：−Σλq は平行移動だけの方向で 0、残りの方向で正 → 滑れる動きを除いて局所最小")
+        else:
+            print("  二次の検査で決着しない（この λ では −Σλq が半正定値にならない）")
+        return 0 if verdict != "no" else 2
 
+    code = attempt(rows, "全部の触れ合い")
+    if code == 2:
+        sub_ = [r for r in rows if r[0] != "面の重なりの端"]
+        if len(sub_) < len(rows):
+            c2 = attempt(sub_, "面の重なりの端を除く")
+            if c2 == 0: code = 0
+    return code
 
 def run_all():
     """data/exact_touch で EXACT-VALID の配置すべてを CPU−4 並列（窓を出さない子プロセス）で調べ、data/exact_touch/force_summary.tsv に書く"""
     import csv, subprocess
     from concurrent.futures import ThreadPoolExecutor
     D = os.path.join(HERE, "data", "exact_touch")
-    ids = [r["record"] for r in csv.DictReader(open(os.path.join(D, "summary.tsv"), encoding="utf-8"), delimiter="	") if r["status"] == "EXACT-VALID"]
+    ids = [(r["record"], False) for r in csv.DictReader(open(os.path.join(D, "summary.tsv"), encoding="utf-8"), delimiter="	") if r["status"] == "EXACT-VALID"]
+    pk = os.path.join(D, "summary_k.tsv")
+    if os.path.exists(pk):
+        ids += [(r["record"], True) for r in csv.DictReader(open(pk, encoding="utf-8"), delimiter="	") if r["status"] == "EXACT-VALID"]
     NOWIN = getattr(subprocess, "CREATE_NO_WINDOW", 0); print(len(ids), "件", flush=True)
     KEYS = [("SECOND-ORDER-CERTIFIED", "厳密な局所最小"), ("LOCAL-MIN", "局所最小（滑れる駒を除く）"), ("力が見つからない", "力が見つからない"),
             ("決着しない", "二次で決着しない"), ("正確な数で解けなかった", "正確に解けない"), ("負のもの", "正確な力が負")]
-    def one(rid):
+    def one(item):
+        rid, k = item
         try:
-            o = subprocess.run([sys.executable, "-I", "-X", "utf8", os.path.abspath(__file__), os.path.join(D, rid + ".json")],
+            o = subprocess.run([sys.executable, "-I", "-X", "utf8", os.path.abspath(__file__), os.path.join(D, rid + ".json")] + (["--k"] if k else []),
                                capture_output=True, text=True, encoding="utf-8", timeout=1800, creationflags=NOWIN).stdout
             st = next((lab for k, lab in KEYS if k in o), "異常終了")
             info = " / ".join(l.strip() for l in o.splitlines() if "使う触れ合い" in l or "怪しい方向" in l)
@@ -397,6 +412,13 @@ def run_all():
     with open(os.path.join(D, "force_summary.tsv"), "w", encoding="utf-8") as w:
         w.write("record\tstatus\tinfo\n"); w.writelines(l + "\n" for l in res)
 
+def use_k():
+    """数の型を多重 2 次体（numfield.K）に差し替える（√5 などを含む配置用。touchk が certify_touch を差し替える）"""
+    global Q2
+    import touchk
+    Q2 = T.Q2
+
 if __name__ == "__main__":
+    if "--k" in sys.argv: use_k(); sys.argv.remove("--k")
     if sys.argv[1] == "--all": run_all(); sys.exit(0)
     sys.exit(main(sys.argv[1]))

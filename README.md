@@ -29,7 +29,8 @@ Code comments are in Japanese.
   Only records whose scale is fixed by their contacts are included (689 records in 25 piece/container pairs).
 - `RESULTS.tsv` — summary table of the above.
   - **455 closed forms**, of which **257 are not yet in the catalogue's `closed_form_conjecture` column** and 198 agree with it (mostly to 116–117 digits; configurations at a singular minimum of a contact-preserving family give 17–28 digits).
-- `data/exact_touch/` — exact touching configurations and their checks (`summary.tsv`: 158 EXACT-VALID), and force certificates (`force_summary.tsv`).
+- `data/exact_touch/` — exact touching configurations and their checks: 266 records EXACT-VALID at the exact closed-form scale (`summary.tsv` in Q(√2), `summary_k.tsv` in multi-quadratic fields).
+- `data/exact_touch/force_summary.tsv` — force certificates: 22 strict local minima, 6 local minima up to sliding pieces, 115 first-order certificates where the second-order test is inconclusive.
 
 ## Usage
 
