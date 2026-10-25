@@ -1,18 +1,11 @@
 cff-version: 1.2.0
-message: "If you use these results or methods, please cite this repository."
+message: "If you use these results or methods, please cite this repository. Concept DOI (all versions): 10.5281/zenodo.23630728"
 title: "zerogap-packing: exact contact analysis, closed forms and local-optimality certificates for polyhedral packings"
 authors:
   - family-names: Nakano
     given-names: Hirotaka
     alias: konoha-ily2
-doi: 10.5281/zenodo.23630728
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.23630728
-    description: "Concept DOI (all versions)"
-  - type: doi
-    value: 10.5281/zenodo.23630729
-    description: "v1.0.0"
-repository-code:"https://github.com/konoha-ily2/zerogap-packing"
+repository-code: "https://github.com/konoha-ily2/zerogap-packing"
 license: MIT
+version: 1.1.1
 date-released: 2026-10-25
