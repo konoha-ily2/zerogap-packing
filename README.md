@@ -1,5 +1,7 @@
 # zerogap-packing
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23630728.svg)](https://doi.org/10.5281/zenodo.23630728)
+
 Exact contact analysis for packings of convex polyhedra in convex polyhedral containers:
 closed forms of the container scale, exact verification of touching configurations, and first-order local-optimality certificates.
 
@@ -43,7 +45,11 @@ python force_cert.py data/exact_touch/cubincub_n29.json
 
 ## Citation
 
-If you use these results or methods, please cite this repository (see `CITATION.cff`).
+If you use these results or methods, please cite this repository (see `CITATION.cff`):
+
+> Hirotaka Nakano. *zerogap-packing: exact contact analysis, closed forms and local-optimality certificates for polyhedral packings.* Zenodo. https://doi.org/10.5281/zenodo.23630728
+
+This DOI always resolves to the latest version; v1.0.0 is https://doi.org/10.5281/zenodo.23630729.
 
 ## License
 
