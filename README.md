@@ -28,9 +28,9 @@ Code comments are in Japanese.
 - `data/closed_forms/` — one JSON per record: contact counts, equation rank, kernel dimension, *S* to ~117 digits, minimal polynomial and closed form when found.
   Only records whose scale is fixed by their contacts are included (1,044 records in 25 piece/container pairs, as of v1.2.0; this now includes improved configurations that the catalogue has accepted).
 - `RESULTS.tsv` — summary table of the above.
-  - Counts below are as of v1.1.1 (2026-10-25) and have not been recomputed for v1.2.0. **455 closed forms**, of which **257 are not yet in the catalogue's `closed_form_conjecture` column** and 198 agree with it (mostly to 116–117 digits; configurations at a singular minimum of a contact-preserving family give 17–28 digits).
-- `data/exact_touch/` — exact touching configurations and their checks (v1.1.1 count: 266 records EXACT-VALID at the exact closed-form scale; `summary.tsv` in Q(√2), `summary_k.tsv` in multi-quadratic fields).
-- `data/exact_touch/force_summary.tsv` — force certificates (v1.1.1 counts): 22 strict local minima, 6 local minima up to sliding pieces, 115 first-order certificates where the second-order test is inconclusive.
+  - **654 closed forms**, of which **345 are not in the catalogue's `closed_form_conjecture` column** and 305 agree with it (3 more were not compared automatically, 1 differs because the catalogue's conjecture belongs to an earlier configuration). 636 are solved to 116–117 digits or more; 13 give 17–28 digits (configurations at a singular minimum of a contact-preserving family) and 5 fewer than 17. Counts recomputed for v1.2.0 on 2026-10-29.
+- `data/exact_touch/` — exact touching configurations and their checks (266 records EXACT-VALID at the exact closed-form scale; `summary.tsv` in Q(√2), `summary_k.tsv` in multi-quadratic fields).
+- `data/exact_touch/force_summary.tsv` — force certificates: 44 strict local minima, 18 local minima up to sliding pieces, 132 first-order certificates where the second-order test is inconclusive.
 
 ## Usage
 
