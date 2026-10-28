@@ -1,0 +1,28 @@
+{
+ "record": "icoinoct_n100_glat_desc_desc",
+ "piece": "icosahedron",
+ "container": "octahedron",
+ "n": 100,
+ "s0": 9.607578947587108,
+ "tol": 4.030452672905746e-05,
+ "contacts": {
+  "w": 18,
+  "vf": 98,
+  "ee": 2150
+ },
+ "equations": 2366,
+ "variables": 701,
+ "rank": 701,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "4.84e-130",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "-3.39e-128",
+ "family": false,
+ "digits": 117,
+ "s": "9.60757614122595568003196513385913920462871505588874826888992811619834573363092245372115425566955420792173003346484382",
+ "poly_searched_degree": 24
+}

@@ -1,0 +1,33 @@
+{
+ "record": "dodincub_n89_from_n99_desc",
+ "piece": "dodecahedron",
+ "container": "cube",
+ "n": 89,
+ "s0": 10.708206759550352,
+ "tol": 8.173798500368445e-05,
+ "contacts": {
+  "w": 160,
+  "vf": 4956,
+  "ee": 0
+ },
+ "equations": 5205,
+ "variables": 624,
+ "rank": 624,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "8.96e-121",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "7.6e-122",
+ "family": false,
+ "digits": 117,
+ "s": "10.7082039324993690892275210061938287063218550788345771728126917362315627769134146982432432251363468249085245284523214",
+ "poly": [
+  1,
+  -8,
+  -29
+ ],
+ "closed_form": "4 + 3*√5"
+}

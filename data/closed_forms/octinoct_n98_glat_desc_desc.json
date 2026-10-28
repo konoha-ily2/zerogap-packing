@@ -1,0 +1,32 @@
+{
+ "record": "octinoct_n98_glat_desc_desc",
+ "piece": "octahedron",
+ "container": "octahedron",
+ "n": 98,
+ "s0": 5.333335123396119,
+ "tol": 4.949232009468547e-05,
+ "contacts": {
+  "w": 150,
+  "vf": 1200,
+  "ee": 1186
+ },
+ "equations": 2634,
+ "variables": 687,
+ "rank": 687,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.23e-132",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "1.69e-131",
+ "family": false,
+ "digits": 117,
+ "s": "5.33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333",
+ "poly": [
+  3,
+  -16
+ ],
+ "closed_form": "16/3"
+}

@@ -1,0 +1,28 @@
+{
+ "record": "octinico_n77_glat_desc_desc",
+ "piece": "octahedron",
+ "container": "icosahedron",
+ "n": 77,
+ "s0": 3.2377126106439866,
+ "tol": 1.2470237306996405e-05,
+ "contacts": {
+  "w": 11,
+  "vf": 810,
+  "ee": 966
+ },
+ "equations": 1864,
+ "variables": 540,
+ "rank": 539,
+ "kernel": 1,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "6.84e-130",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "1.98e-127",
+ "family": false,
+ "digits": 117,
+ "s": "3.23771153698472860732225731718501930584371353327928549947887977960523558027002447980255857554035062995647145532083576",
+ "poly_searched_degree": 24
+}

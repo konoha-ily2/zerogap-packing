@@ -1,0 +1,26 @@
+{
+ "record": "octindod_n35_desc_desc",
+ "piece": "octahedron",
+ "container": "dodecahedron",
+ "n": 35,
+ "s0": 1.6699006564781766,
+ "tol": 5.073647961216055e-06,
+ "contacts": {
+  "w": 80,
+  "vf": 34,
+  "ee": 113
+ },
+ "equations": 262,
+ "variables": 246,
+ "rank": 246,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "9.17e-72",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "1.66990008588689500097180953348979901405457637574517155751",
+ "poly_searched_degree": 24
+}

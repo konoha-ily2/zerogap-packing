@@ -1,0 +1,28 @@
+{
+ "record": "cubintet_n46_from_n48_desc",
+ "piece": "cube",
+ "container": "tetrahedron",
+ "n": 46,
+ "s0": 9.344640514397037,
+ "tol": 1.3390069175132655e-05,
+ "contacts": {
+  "w": 99,
+  "vf": 939,
+  "ee": 200
+ },
+ "equations": 1284,
+ "variables": 323,
+ "rank": 308,
+ "kernel": 15,
+ "kernel_s_component": 1.1889817080271028e-15,
+ "converged": true,
+ "residual": "9.08e-127",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "2.04e-127",
+ "family": false,
+ "digits": 117,
+ "s": "9.34463746612779444409637306976780024584925614722576516013186675033067865374532095813718057163521196364931175308436291",
+ "poly_searched_degree": 24
+}

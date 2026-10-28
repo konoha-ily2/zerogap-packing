@@ -1,0 +1,28 @@
+{
+ "record": "dodinoct_n97_lat_desc",
+ "piece": "dodecahedron",
+ "container": "octahedron",
+ "n": 97,
+ "s0": 14.427149129634786,
+ "tol": 7.542927482561786e-05,
+ "contacts": {
+  "w": 8,
+  "vf": 5488,
+  "ee": 0
+ },
+ "equations": 5593,
+ "variables": 680,
+ "rank": 680,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.15e-130",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "1.47e-128",
+ "family": false,
+ "digits": 117,
+ "s": "14.4271451913543216009837771730093553888726392293177302569680184583953676801125327935586965765828708557445660944441775",
+ "poly_searched_degree": 24
+}

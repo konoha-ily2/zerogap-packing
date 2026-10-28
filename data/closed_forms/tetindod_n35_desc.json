@@ -1,0 +1,26 @@
+{
+ "record": "tetindod_n35_desc",
+ "piece": "tetrahedron",
+ "container": "dodecahedron",
+ "n": 35,
+ "s0": 1.0759487562102856,
+ "tol": 6.847251201410509e-06,
+ "contacts": {
+  "w": 81,
+  "vf": 79,
+  "ee": 96
+ },
+ "equations": 291,
+ "variables": 246,
+ "rank": 243,
+ "kernel": 3,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "2.72e-71",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "1.07594823342389716905742678369760192482832144746684326657",
+ "poly_searched_degree": 24
+}

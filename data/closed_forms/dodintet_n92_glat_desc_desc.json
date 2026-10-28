@@ -1,0 +1,35 @@
+{
+ "record": "dodintet_n92_glat_desc_desc",
+ "piece": "dodecahedron",
+ "container": "tetrahedron",
+ "n": 92,
+ "s0": 22.715536647167895,
+ "tol": 8.173798503084985e-05,
+ "contacts": {
+  "w": 81,
+  "vf": 4704,
+  "ee": 0
+ },
+ "equations": 4877,
+ "variables": 645,
+ "rank": 645,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "5.2e-121",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "-1.16e-121",
+ "family": false,
+ "digits": 117,
+ "s": "22.715530844996277286805153295205421873156029379225164159918850265511069844649214229151441693672700764753145856073254",
+ "poly": [
+  4,
+  0,
+  -2196,
+  0,
+  68121
+ ],
+ "closed_form": "3*√(48*√5 + 122)/2"
+}

@@ -1,0 +1,33 @@
+{
+ "record": "cubindod_n90_from_n93_desc",
+ "piece": "cube",
+ "container": "dodecahedron",
+ "n": 90,
+ "s0": 2.7852190886420907,
+ "tol": 2.112042675148984e-06,
+ "contacts": {
+  "w": 40,
+  "vf": 3306,
+  "ee": 454
+ },
+ "equations": 3890,
+ "variables": 631,
+ "rank": 610,
+ "kernel": 21,
+ "kernel_s_component": 1.6258865134391314e-16,
+ "converged": true,
+ "residual": "2.91e-126",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "6.87e-127",
+ "family": false,
+ "digits": 117,
+ "s": "2.78521825875241849129450280959032329243288886446745417088468167777900935516524365673423430364400383785065597426610149",
+ "poly": [
+  1,
+  -57,
+  151
+ ],
+ "closed_form": "57/2 - 23*√5/2"
+}

@@ -1,0 +1,26 @@
+{
+ "record": "cubintet_n94_glat_desc_desc",
+ "piece": "cube",
+ "container": "tetrahedron",
+ "n": 94,
+ "s0": 11.513854473141329,
+ "tol": 2.987565840118678e-05,
+ "contacts": {
+  "w": 32,
+  "vf": 4608,
+  "ee": 0
+ },
+ "equations": 4734,
+ "variables": 659,
+ "rank": 640,
+ "kernel": 19,
+ "kernel_s_component": 9.31004075742229e-16,
+ "converged": true,
+ "residual": "2.27e-74",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "11.5138508283194196642588727550279925579624090172088489583",
+ "poly_searched_degree": 24
+}

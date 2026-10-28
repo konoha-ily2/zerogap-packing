@@ -1,0 +1,26 @@
+{
+ "record": "cubindod_n97_glat_desc_desc",
+ "piece": "cube",
+ "container": "dodecahedron",
+ "n": 97,
+ "s0": 2.8441039439838804,
+ "tol": 4.5807014623702945e-06,
+ "contacts": {
+  "w": 46,
+  "vf": 3278,
+  "ee": 520
+ },
+ "equations": 3941,
+ "variables": 680,
+ "rank": 662,
+ "kernel": 18,
+ "kernel_s_component": 4.0311684165759564e-17,
+ "converged": true,
+ "residual": "2.6e-68",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "2.84410309180335290001134391514806258840758522167264121689",
+ "poly_searched_degree": 24
+}

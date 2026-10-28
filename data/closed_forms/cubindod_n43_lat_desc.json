@@ -1,0 +1,26 @@
+{
+ "record": "cubindod_n43_lat_desc",
+ "piece": "cube",
+ "container": "dodecahedron",
+ "n": 43,
+ "s0": 2.19237997823604,
+ "tol": 4.018603602664114e-05,
+ "contacts": {
+  "w": 38,
+  "vf": 1282,
+  "ee": 186
+ },
+ "equations": 1549,
+ "variables": 302,
+ "rank": 298,
+ "kernel": 4,
+ "kernel_s_component": 1.3006532840124074e-16,
+ "converged": true,
+ "residual": "2.98e-73",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "2.19237931596794436617004409402508399556172861870281957247",
+ "poly_searched_degree": 24
+}

@@ -1,0 +1,33 @@
+{
+ "record": "dodindod_n98_glat_desc_desc",
+ "piece": "dodecahedron",
+ "container": "dodecahedron",
+ "n": 98,
+ "s0": 5.618035553841004,
+ "tol": 8.173798504443256e-05,
+ "contacts": {
+  "w": 105,
+  "vf": 5698,
+  "ee": 0
+ },
+ "equations": 5901,
+ "variables": 687,
+ "rank": 687,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "2.28e-134",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "-1.08e-130",
+ "family": false,
+ "digits": 117,
+ "s": "5.61803398874989484820458683436563811772030917980576286213544862270526046281890244970720720418939113748475408807538689",
+ "poly": [
+  1,
+  -9,
+  19
+ ],
+ "closed_form": "√5/2 + 9/2"
+}

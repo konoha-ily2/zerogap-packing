@@ -1,0 +1,26 @@
+{
+ "record": "octindod_n76_lat_desc",
+ "piece": "octahedron",
+ "container": "dodecahedron",
+ "n": 76,
+ "s0": 2.0940211312663415,
+ "tol": 4.180676697707172e-05,
+ "contacts": {
+  "w": 12,
+  "vf": 924,
+  "ee": 954
+ },
+ "equations": 1966,
+ "variables": 533,
+ "rank": 533,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "2.37e-61",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "2.09402045797556740199431337971438775163720332974450781866",
+ "poly_searched_degree": 24
+}

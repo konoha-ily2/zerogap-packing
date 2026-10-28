@@ -1,0 +1,33 @@
+{
+ "record": "cubindod_n33_from_n34_desc",
+ "piece": "cube",
+ "container": "dodecahedron",
+ "n": 33,
+ "s0": 2.0557287009202625,
+ "tol": 3.100601024020997e-05,
+ "contacts": {
+  "w": 28,
+  "vf": 1234,
+  "ee": 138
+ },
+ "equations": 1433,
+ "variables": 232,
+ "rank": 225,
+ "kernel": 7,
+ "kernel_s_component": 8.906857703218732e-17,
+ "converged": true,
+ "residual": "1.42e-121",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "3.66e-122",
+ "family": false,
+ "digits": 117,
+ "s": "2.05572809000084121436330532507489505823752656155389710291641101835791629744878040234234236648487090012196729539690487",
+ "poly": [
+  1,
+  -22,
+  41
+ ],
+ "closed_form": "11 - 4*√5"
+}

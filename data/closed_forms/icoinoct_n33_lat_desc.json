@@ -1,0 +1,35 @@
+{
+ "record": "icoinoct_n33_lat_desc",
+ "piece": "icosahedron",
+ "container": "octahedron",
+ "n": 33,
+ "s0": 6.787843789228644,
+ "tol": 6.733920022697904e-05,
+ "contacts": {
+  "w": 144,
+  "vf": 0,
+  "ee": 336
+ },
+ "equations": 513,
+ "variables": 232,
+ "rank": 220,
+ "kernel": 12,
+ "kernel_s_component": 4.58024354070055e-16,
+ "converged": true,
+ "residual": "2.09e-121",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "3.1e-122",
+ "family": false,
+ "digits": 117,
+ "s": "6.78784181834702577187029640730666170530952320166805595918858206120105921785676272640412648541537292894302308760844553",
+ "poly": [
+  324,
+  0,
+  -15246,
+  0,
+  14641
+ ],
+ "closed_form": "11*√(3*√5 + 7)/6"
+}

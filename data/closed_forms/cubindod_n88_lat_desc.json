@@ -1,0 +1,33 @@
+{
+ "record": "cubindod_n88_lat_desc",
+ "piece": "cube",
+ "container": "dodecahedron",
+ "n": 88,
+ "s0": 2.7639328458808112,
+ "tol": 5.477225579691118e-05,
+ "contacts": {
+  "w": 48,
+  "vf": 9720,
+  "ee": 0
+ },
+ "equations": 9856,
+ "variables": 617,
+ "rank": 617,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "2.83e-121",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "3.74e-123",
+ "family": false,
+ "digits": 117,
+ "s": "2.76393202250021030359082633126872376455938164038847427572910275458947907436219510058558559162121772503049182384922622",
+ "poly": [
+  1,
+  -10,
+  20
+ ],
+ "closed_form": "5 - √5"
+}

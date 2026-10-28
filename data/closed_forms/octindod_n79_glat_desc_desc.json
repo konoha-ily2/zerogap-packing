@@ -1,0 +1,26 @@
+{
+ "record": "octindod_n79_glat_desc_desc",
+ "piece": "octahedron",
+ "container": "dodecahedron",
+ "n": 79,
+ "s0": 2.134163319937161,
+ "tol": 2.697055355770125e-05,
+ "contacts": {
+  "w": 10,
+  "vf": 948,
+  "ee": 962
+ },
+ "equations": 1999,
+ "variables": 554,
+ "rank": 554,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.31e-73",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "2.13416263594624444183438350676747364278125920538553277459",
+ "poly_searched_degree": 24
+}

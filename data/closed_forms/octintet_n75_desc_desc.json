@@ -1,0 +1,28 @@
+{
+ "record": "octintet_n75_desc_desc",
+ "piece": "octahedron",
+ "container": "tetrahedron",
+ "n": 75,
+ "s0": 7.870685299900137,
+ "tol": 1.1467605257686867e-06,
+ "contacts": {
+  "w": 192,
+  "vf": 63,
+  "ee": 243
+ },
+ "equations": 573,
+ "variables": 526,
+ "rank": 523,
+ "kernel": 3,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.89e-129",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "-2.44e-129",
+ "family": false,
+ "digits": 117,
+ "s": "7.87068255889933614938395673202520140876362457376532339154341070703806784260953487679393710138778648836648814219136249",
+ "poly_searched_degree": 24
+}

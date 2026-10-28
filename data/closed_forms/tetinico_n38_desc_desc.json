@@ -1,0 +1,26 @@
+{
+ "record": "tetinico_n38_desc_desc",
+ "piece": "tetrahedron",
+ "container": "icosahedron",
+ "n": 38,
+ "s0": 1.611335941707289,
+ "tol": 5.128756321760815e-06,
+ "contacts": {
+  "w": 94,
+  "vf": 99,
+  "ee": 114
+ },
+ "equations": 345,
+ "variables": 267,
+ "rank": 267,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "3.3e-70",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "1.61133527457242980848420110415765959715738518720728348377",
+ "poly_searched_degree": 24
+}

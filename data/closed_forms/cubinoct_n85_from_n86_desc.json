@@ -1,0 +1,26 @@
+{
+ "record": "cubinoct_n85_from_n86_desc",
+ "piece": "cube",
+ "container": "octahedron",
+ "n": 85,
+ "s0": 6.799004111814682,
+ "tol": 8.688560680068693e-06,
+ "contacts": {
+  "w": 38,
+  "vf": 2796,
+  "ee": 566
+ },
+ "equations": 3485,
+ "variables": 596,
+ "rank": 590,
+ "kernel": 6,
+ "kernel_s_component": 1.8743043664487152e-16,
+ "converged": true,
+ "residual": "7.44e-72",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "6.79900201069863606981726780117487941073902279362242953451",
+ "poly_searched_degree": 24
+}

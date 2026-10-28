@@ -1,0 +1,28 @@
+{
+ "record": "icoincub_n44_lat_desc",
+ "piece": "icosahedron",
+ "container": "cube",
+ "n": 44,
+ "s0": 5.655504084845073,
+ "tol": 3.5614203981377847e-06,
+ "contacts": {
+  "w": 29,
+  "vf": 0,
+  "ee": 936
+ },
+ "equations": 1009,
+ "variables": 309,
+ "rank": 309,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "2.41e-132",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "-1.04e-129",
+ "family": false,
+ "digits": 117,
+ "s": "5.65550247344036936654296423860550901865856935738816454088552007554603202011480918712129829392618815536933211834456711",
+ "poly_searched_degree": 24
+}

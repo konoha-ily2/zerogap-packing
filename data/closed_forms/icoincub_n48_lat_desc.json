@@ -1,0 +1,33 @@
+{
+ "record": "icoincub_n48_lat_desc",
+ "piece": "icosahedron",
+ "container": "cube",
+ "n": 48,
+ "s0": 5.981425679016715,
+ "tol": 6.733920026505419e-05,
+ "contacts": {
+  "w": 96,
+  "vf": 0,
+  "ee": 624
+ },
+ "equations": 768,
+ "variables": 337,
+ "rank": 331,
+ "kernel": 6,
+ "kernel_s_component": 4.453820643975751e-16,
+ "converged": true,
+ "residual": "1.61e-121",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "3.17e-123",
+ "family": false,
+ "digits": 117,
+ "s": "5.98142396999971959521223155830836831392082447948203429902786299388069456751707319921921921117170969995934423486769838",
+ "poly": [
+  9,
+  -54,
+  1
+ ],
+ "closed_form": "4*√5/3 + 3"
+}

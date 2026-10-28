@@ -1,0 +1,28 @@
+{
+ "record": "icoincub_n41_from_n43_desc",
+ "piece": "icosahedron",
+ "container": "cube",
+ "n": 41,
+ "s0": 5.653581715877511,
+ "tol": 2.7825756269937515e-06,
+ "contacts": {
+  "w": 35,
+  "vf": 0,
+  "ee": 822
+ },
+ "equations": 898,
+ "variables": 288,
+ "rank": 287,
+ "kernel": 1,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "1.74e-131",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "7.66e-129",
+ "family": false,
+ "digits": 117,
+ "s": "5.65358010504756491429065905726986149161539398242697969321985784476648140320308923093838629558395913816439031221354518",
+ "poly_searched_degree": 24
+}

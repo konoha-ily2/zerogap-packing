@@ -1,0 +1,32 @@
+{
+ "record": "icoinico_n99_lat_desc",
+ "piece": "icosahedron",
+ "container": "icosahedron",
+ "n": 99,
+ "s0": 5.666668331300482,
+ "tol": 6.73392002555354e-05,
+ "contacts": {
+  "w": 66,
+  "vf": 0,
+  "ee": 1644
+ },
+ "equations": 1809,
+ "variables": 694,
+ "rank": 670,
+ "kernel": 24,
+ "kernel_s_component": 3.5265425417256793e-16,
+ "converged": true,
+ "residual": "1.52e-134",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "-3.64e-128",
+ "family": false,
+ "digits": 117,
+ "s": "5.66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666667",
+ "poly": [
+  3,
+  -17
+ ],
+ "closed_form": "17/3"
+}

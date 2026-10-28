@@ -1,0 +1,35 @@
+{
+ "record": "dodinoct_n35_lat_desc",
+ "piece": "dodecahedron",
+ "container": "octahedron",
+ "n": 35,
+ "s0": 10.297107800037315,
+ "tol": 8.173798497651903e-05,
+ "contacts": {
+  "w": 57,
+  "vf": 1764,
+  "ee": 0
+ },
+ "equations": 1856,
+ "variables": 246,
+ "rank": 246,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "7.69e-122",
+ "determined": true,
+ "minimize": "なし",
+ "quick": false,
+ "recheck_diff": "9.88e-123",
+ "family": false,
+ "digits": 117,
+ "s": "10.2971052507183173568013101044454373776507607830798710250769153292624855634780268354379301960906192028253125433634428",
+ "poly": [
+  4,
+  0,
+  -486,
+  0,
+  6561
+ ],
+ "closed_form": "9*√(√5 + 3)/2"
+}

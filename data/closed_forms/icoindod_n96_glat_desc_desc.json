@@ -1,0 +1,26 @@
+{
+ "record": "icoindod_n96_glat_desc_desc",
+ "piece": "icosahedron",
+ "container": "dodecahedron",
+ "n": 96,
+ "s0": 3.73677239939809,
+ "tol": 2.0433128577048543e-05,
+ "contacts": {
+  "w": 17,
+  "vf": 10,
+  "ee": 2038
+ },
+ "equations": 2161,
+ "variables": 673,
+ "rank": 673,
+ "kernel": 0,
+ "kernel_s_component": 0.0,
+ "converged": true,
+ "residual": "9.81e-73",
+ "determined": true,
+ "minimize": "なし",
+ "quick": true,
+ "digits": 57,
+ "s": "3.73677131559337955525667695576257138322611026655028401721",
+ "poly_searched_degree": 24
+}
