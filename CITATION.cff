@@ -7,5 +7,5 @@ authors:
     alias: konoha-ily2
 repository-code: "https://github.com/konoha-ily2/zerogap-packing"
 license: MIT
-version: 1.1.1
-date-released: 2026-10-25
+version: 1.2.0
+date-released: 2026-10-29
